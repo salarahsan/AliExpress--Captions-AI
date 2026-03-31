@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 340px; padding: 15px; font-family: 'Segoe UI', sans-serif; background: #fdfdfd; }
+    h2 { color: #ff4747; font-size: 20px; text-align: center; margin-bottom: 15px; }
+    .input-group { margin-bottom: 10px; }
+    textarea { width: 100%; height: 70px; padding: 10px; border: 2px solid #eee; border-radius: 8px; box-sizing: border-box; resize: none; font-size: 13px; }
+    input[type="password"] { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; font-size: 12px; box-sizing: border-box; }
+    button { background: #ff4747; color: white; border: none; padding: 12px; width: 100%; border-radius: 8px; cursor: pointer; margin-top: 10px; font-weight: bold; transition: 0.3s; }
+    button:hover { background: #e33e3e; }
+    #loading { display: none; text-align: center; margin-top: 10px; color: #ff4747; font-weight: 500; }
+    #output { margin-top: 15px; padding: 12px; background: white; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; line-height: 1.5; color: #333; max-height: 250px; overflow-y: auto; white-space: pre-wrap; }
+    .footer-text { font-size: 10px; color: #999; text-align: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Ali AI Writer 🚀</h2>
+  
+  <div class="input-group">
+    <textarea id="productTitle" placeholder="Paste product title here..."></textarea>
+  </div>
+
+  <div class="input-group">
+    <input type="password" id="apiKeyInput" placeholder="Enter Groq API Key (Stored Locally)">
+  </div>
+
+  <button id="generateBtn">Create Viral Caption</button>
+  
+  <div id="loading">✨ Writing Magic...</div>
+  <div id="output"></div>
+
+  <div class="footer-text">Code by Salar Ahsan | Safe & Secure</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
